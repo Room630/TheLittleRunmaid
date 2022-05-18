@@ -4,20 +4,18 @@ using UnityEngine;
 
 public class PlayerStat : MonoBehaviour
 {
-    public int maxHP; // 하트의 개수, 체력
-    public int coin; // q,보
-    public int star;
-    public char[] hadItem = new char[3]; // 소지중인 아이템
-// 현재 소유중인 소모성 아이템. 상점에서 최대 3개 구입해서 소지 가능
+    public static int maxHP; // 하트의 개수, 체력
+    int coin; // 보유 코인
+    int star; // 보유 별 (상점에서 하트로 교환 가능)
 
+    public char[] hadItem = new char[3]; // 소지중인 소모성 아이템? 아이템은 어떻게 할건지?
 
-    // Start is called before the first frame update
     void Start()
     {
-        
+        // 화면에 띄우기 위해 임시로 maxHP 설정
+        maxHP = 3;
     }
 
-    // Update is called once per frame
     void Update()
     {
         
