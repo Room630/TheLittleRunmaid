@@ -20,9 +20,9 @@ public class PlayManager : MonoBehaviour
     void Start()
     {
         // UI 초기화
-        currentHPText = GameObject.Find("CurrentHP").GetComponent<TextMeshProUGUI>();
-        coinCountText = GameObject.Find("CoinCount").GetComponent<TextMeshProUGUI>();
-        starCountText = GameObject.Find("StarCount").GetComponent<TextMeshProUGUI>();
+        // currentHPText = GameObject.Find("CurrentHP").GetComponent<TextMeshProUGUI>();
+        // coinCountText = GameObject.Find("CoinCount").GetComponent<TextMeshProUGUI>();
+        // starCountText = GameObject.Find("StarCount").GetComponent<TextMeshProUGUI>();
         
         // 필드 초기화
         currentHP = PlayerStat.maxHP;
@@ -34,8 +34,8 @@ public class PlayManager : MonoBehaviour
     {
         // UI 바꿔주는 코드 -> Update 말고 바뀌었을때 한번씩 호출해주는게 더 효율적일 듯.
         // 나중에 코드 추가되면 수정
-       currentHPText.text = "현재 HP는 " + currentHP + " 입니다.";
-       coinCountText.text = "현재 코인은 " + coin + " 입니다.";
-       starCountText.text = "현재 별은 " + star + " 입니다.";
+       // currentHPText.text = "현재 HP는 " + currentHP + " 입니다.";
+       // coinCountText.text = "현재 코인은 " + coin + " 입니다.";
+       // starCountText.text = "현재 별은 " + star + " 입니다.";
     }
 }
