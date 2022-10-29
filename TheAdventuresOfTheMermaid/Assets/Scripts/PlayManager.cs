@@ -13,9 +13,9 @@ public class PlayManager : MonoBehaviour
     TextMeshProUGUI coinCountText;
     TextMeshProUGUI starCountText;
 
-    int currentHP;
-    int coin; // 이번 스테이지에서 획득한 코인
-    int star; // 이번 스테이지에서 획득한 코인
+    // int currentHP;
+    // int coin; // 이번 스테이지에서 획득한 코인
+    // int star; // 이번 스테이지에서 획득한 코인
 
     void Start()
     {
@@ -25,9 +25,9 @@ public class PlayManager : MonoBehaviour
         // starCountText = GameObject.Find("StarCount").GetComponent<TextMeshProUGUI>();
         
         // 필드 초기화
-        currentHP = PlayerStat.maxHP;
-        coin = 0;
-        star = 0;
+        // currentHP = PlayerStat.maxHP;
+        // coin = 0;
+        // star = 0;
     }
 
     void Update()
