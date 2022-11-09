@@ -10,11 +10,11 @@ public class PlayerController : MonoBehaviour
     public static bool Dash { get; set; }
 
     // 한번에 이동할 Y값
-    private Vector3 moveY = new Vector3(0, 3, 0);
+    private Vector3 speed = new Vector3(0, 3, 0);
 
     private void Start() 
     {
-        
+
     }
 
     private void Update() 
@@ -22,16 +22,16 @@ public class PlayerController : MonoBehaviour
         // Up 버튼을 누른 상태
         if (UpMove) // 한계점 필요
         {
-            transform.Translate(moveY * Time.deltaTime); 
+            transform.Translate(speed * Time.deltaTime); 
             if (Dash) {
-                transform.Translate(moveY * 2* Time.deltaTime);
+                transform.Translate(speed * 2* Time.deltaTime);
             }
         }
         // Down 버튼을 누른 상태
         if (DownMove) { // 한계점 필요
-            transform.Translate(-moveY * Time.deltaTime); 
+            transform.Translate(-speed * Time.deltaTime); 
             if (Dash) {
-                transform.Translate(-moveY * 2* Time.deltaTime);
+                transform.Translate(-speed * 2* Time.deltaTime);
             }
         }
     }
