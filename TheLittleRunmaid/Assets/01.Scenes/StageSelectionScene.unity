@@ -512,15 +512,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1838023747}
-        m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
-        m_MethodName: ToChapter
-        m_Mode: 1
+        m_TargetAssemblyTypeName: LoadingSceneController, Assembly-CSharp
+        m_MethodName: LoadingScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: ChapterSelectionScene
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &737612845
@@ -1202,9 +1202,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1838023746}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1588a5d1ca38eb54c96b123a253f1d97, type: 3}
+  m_Script: {fileID: 11500000, guid: d2a70d9b93bf14044a0163c362078147, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  progressbar: {fileID: 0}
 --- !u!4 &1838023748
 Transform:
   m_ObjectHideFlags: 0
