@@ -860,6 +860,84 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5abbc244a6089f440843c2a4b1cfd4a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.18
+      value: 0.67
+      inSlope: 5.036765
+      outSlope: 5.036765
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.29912937
+    - serializedVersion: 3
+      time: 0.3
+      value: 1.14
+      inSlope: 1.0163175
+      outSlope: 1.0163175
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.45
+      value: 0.85
+      inSlope: 0.20185444
+      outSlope: 0.20185444
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.58
+      value: 1.08
+      inSlope: 0.13353059
+      outSlope: 0.13353059
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.73
+      value: 0.92
+      inSlope: -0.07714818
+      outSlope: -0.07714818
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.87
+      value: 1.005
+      inSlope: 0.07443517
+      outSlope: 0.07443517
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!95 &1726558830
 Animator:
   serializedVersion: 3
@@ -1028,6 +1106,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5abbc244a6089f440843c2a4b1cfd4a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &2016856139
 Transform:
   m_ObjectHideFlags: 0
