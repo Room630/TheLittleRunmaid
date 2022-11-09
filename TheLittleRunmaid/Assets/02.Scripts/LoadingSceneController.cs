@@ -10,16 +10,28 @@ public class LoadingSceneController : MonoBehaviour
     [SerializeField]
     Image progressbar;
 
-    public static void LoadingScene(string sceneName)
+    /// <summary>
+    /// 원하는 씬으로 넘어갈 때... 이 함수를 써주세요
+    /// </summary>
+    public static void LoadingScene(string sceneName, bool playLoadScene)
     {
         nextScene = sceneName;
-        SceneManager.LoadScene("LoadingScene");
+        if(playLoadScene)
+        {
+            SceneManager.LoadScene("LoadingScene");
+        }
+        else
+        {
+            SceneManager.LoadScene(nextScene);
+        }
+        
     }
 
     void Start()
     {
         StartCoroutine(LoadSceneProgress());
     }
+
 
     IEnumerator LoadSceneProgress()
     {

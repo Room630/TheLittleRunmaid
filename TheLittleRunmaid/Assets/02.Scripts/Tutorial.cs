@@ -23,6 +23,7 @@ public class Tutorial : MonoBehaviour
 
     private void Update() 
     {
+        // 임시 -> 탭을 누르면 튜토리얼 시작
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             currentValue = _tutorial.Find(x => x.num == currentNum).value;
@@ -31,7 +32,13 @@ public class Tutorial : MonoBehaviour
             {
                 obj.value.SetActive(false);
             }
-            currentValue.SetActive(true);
+
+            try
+            {
+                currentValue.SetActive(true);
+            }
+            catch {}
+            
             
             if (currentNum < _tutorial.Count)
             {
@@ -40,7 +47,9 @@ public class Tutorial : MonoBehaviour
             else
             {
                 currentNum = 0;
+                Destroy(this);
             }
+
         }    
     }
 
