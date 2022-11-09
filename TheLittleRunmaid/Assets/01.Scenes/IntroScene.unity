@@ -290,7 +290,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1625909741}
         m_TargetAssemblyTypeName: LoadingSceneController, Assembly-CSharp
-        m_MethodName: LoadingScene
+        m_MethodName: ChangeScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -808,7 +808,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -600}
-  m_SizeDelta: {x: 1131, y: 408}
+  m_SizeDelta: {x: 884, y: 408}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1726558827
 MonoBehaviour:
@@ -830,7 +830,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 39c096bbf8090de4fa332e1169dfc00d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2310ee6e97de9f349a37e4f353eabd0f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

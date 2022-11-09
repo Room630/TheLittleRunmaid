@@ -513,7 +513,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1838023747}
         m_TargetAssemblyTypeName: LoadingSceneController, Assembly-CSharp
-        m_MethodName: LoadingScene
+        m_MethodName: ChangeScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

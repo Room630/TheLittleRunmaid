@@ -26,6 +26,13 @@ public class LoadingSceneController : MonoBehaviour
         }
         
     }
+    /// <summary>
+    /// 인게임 전까지 Intro ~ Selection 화면에서의 씬 전환 함수입니다.
+    /// </summary>
+    public static void ChangeScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
 
     void Start()
     {
