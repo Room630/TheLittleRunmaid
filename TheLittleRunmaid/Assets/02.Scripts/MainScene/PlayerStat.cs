@@ -4,16 +4,15 @@ using UnityEngine;
 
 public class PlayerStat : MonoBehaviour
 {
-    public static PlayerStat instance;
-    const byte maxHP = 5; // 하트의 개수, 체력
-    byte currentHP;
+    // public static PlayerStat instance;
     uint coin; // 보유 코인
     uint star; // 보유 별 (상점에서 하트로 교환 가능)
-
-    void Start()
+    public static int CurrentHP {get; set;}
+    public static int MaxHP {get;set;}
+    void Awake()
     {
-        instance = this;
-        currentHP = maxHP;
+        MaxHP = 5;
+        CurrentHP = MaxHP;
         coin = 0;
         star = 0;
     }
