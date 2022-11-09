@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 146781274}
   - component: {fileID: 146781277}
   - component: {fileID: 146781276}
+  - component: {fileID: 146781275}
   m_Layer: 0
   m_Name: button_up
   m_TagString: Untagged
@@ -160,6 +161,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1.96, y: 1.42}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &146781275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146781273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2717846fdca05e24f8b1cc5c5a038a15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &146781276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -712,9 +725,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d339d359fd87d64eb4c9b04d4d96c01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upMove: 0
-  downMove: 0
-  dash: 0
 --- !u!114 &525252603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -815,16 +825,28 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4fa44d21f7b12c2488d41b783961ea48, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4fa44d21f7b12c2488d41b783961ea48, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4fa44d21f7b12c2488d41b783961ea48, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4fa44d21f7b12c2488d41b783961ea48, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.45022
+      value: -4.75
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4fa44d21f7b12c2488d41b783961ea48, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.3326278
+      value: 1.35
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4fa44d21f7b12c2488d41b783961ea48, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 19.04
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4fa44d21f7b12c2488d41b783961ea48, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1167,6 +1189,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1161576079}
   m_CullTransparentMesh: 1
+--- !u!1 &1166986666
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1166986668}
+  - component: {fileID: 1166986667}
+  m_Layer: 0
+  m_Name: LoadingSceneController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1166986667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166986666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2a70d9b93bf14044a0163c362078147, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  progressbar: {fileID: 0}
+--- !u!4 &1166986668
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166986666}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1206023410
 PrefabInstance:
   m_ObjectHideFlags: 0
